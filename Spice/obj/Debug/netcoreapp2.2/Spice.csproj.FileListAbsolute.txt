@@ -81,3 +81,9 @@ D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\A
 D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategories\Create.g.cshtml.cs
 D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_StatusMessage.g.cshtml.cs
 D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategories\Edit.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategories\Details.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategories\Delete.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Index.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Create.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Spice.csprojAssemblyReference.cache
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Edit.g.cshtml.cs

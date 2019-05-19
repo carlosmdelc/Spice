@@ -150,5 +150,49 @@ namespace Spice.Areas.Admin.Controllers
 
             return View(modelVM);
         }
+
+        // GET - DETAILS
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var subCategory =
+                await _context.SubCategories.Include(s => s.Category).SingleOrDefaultAsync(m => m.Id == id);
+
+            if (subCategory == null)
+                return NotFound();
+
+            return View(subCategory);
+        }
+
+        // GET - DELETE
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var subCategory =
+                await _context.SubCategories.Include(c => c.Category).SingleOrDefaultAsync(m => m.Id == id);
+
+            if (subCategory == null)
+                return NotFound();
+
+            return View(subCategory);
+        }
+
+        // POST - DELETE
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var subCategory = await _context.SubCategories.SingleOrDefaultAsync(c => c.Id == id);
+
+            _context.SubCategories.Remove(subCategory);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
