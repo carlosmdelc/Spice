@@ -85,5 +85,12 @@ D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\A
 D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategories\Delete.g.cshtml.cs
 D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Index.g.cshtml.cs
 D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Create.g.cshtml.cs
-D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Spice.csprojAssemblyReference.cache
 D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Edit.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Details.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Delete.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Index.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Create.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Edit.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Spice.csprojAssemblyReference.cache
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Details.g.cshtml.cs
+D:\Users\Carlos M\Source\repos\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Delete.g.cshtml.cs

@@ -159,5 +159,58 @@ namespace Spice.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        // GET - DETAILS Menuitem
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            menuItemVM.MenuItem = await _context.MenuItems.Include(m => m.Category).Include(m => m.SubCategory)
+                .SingleOrDefaultAsync(m => m.Id == id);
+
+            if (menuItemVM.MenuItem == null)
+                return NotFound();
+
+            return View(menuItemVM);
+        }
+
+        // GET - DELETE MenuItem
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            menuItemVM.MenuItem = await _context.MenuItems.Include(m => m.Category).Include(m => m.SubCategory).SingleOrDefaultAsync(m => m.Id == id);
+
+            if (menuItemVM.MenuItem == null)
+                return NotFound();
+            
+            return View(menuItemVM);
+        }
+
+        // POST - DELETE MenuItem
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            string webRootPath = _hostingEnvironment.WebRootPath;
+            MenuItem menuItem = await _context.MenuItems.FindAsync(id);
+
+            if (menuItem != null)
+            {
+                var imagePath = Path.Combine(webRootPath, menuItem.Image.TrimStart('\\'));
+
+                if (System.IO.File.Exists(imagePath))
+                    System.IO.File.Delete(imagePath);
+                
+                _context.MenuItems.Remove(menuItem);
+
+                await _context.SaveChangesAsync();
+
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
